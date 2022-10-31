@@ -10,10 +10,10 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>ugo-mall-coupon</module>
-        <module>ugo-mall-member</module>
-        <module>ugo-mall-order</module>
-        <module>ugo-mall-product</module>
-        <module>ugo-mall-ware</module>
+        <module>ugomall-coupon</module>
+        <module>ugomall-member</module>
+        <module>ugomall-order</module>
+        <module>ugomall-product</module>
+        <module>ugomall-ware</module>
     </modules>
 </project>

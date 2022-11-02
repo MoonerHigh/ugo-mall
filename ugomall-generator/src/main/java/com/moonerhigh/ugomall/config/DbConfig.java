@@ -9,7 +9,6 @@
 package com.moonerhigh.ugomall.config;
 
 import com.moonerhigh.ugomall.dao.*;
-import io.renren.dao.*;
 import com.moonerhigh.ugomall.utils.RenException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

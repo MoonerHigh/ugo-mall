@@ -1,6 +1,4 @@
-package com.moonerhigh.ugomall.product.config;
-
-
+package com.moonerhigh.ugomall.coupon.config;
 import com.github.xiaoymin.knife4j.spring.extension.OpenApiExtensionResolver;
 import io.swagger.annotations.ApiOperation;
 import lombok.AllArgsConstructor;
@@ -44,7 +42,7 @@ public class SwaggerConfig {
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
                 .title("优购商城")
-                .description("优购商城-商品服务文档")
+                .description("优购商城-优惠服务文档")
 //                .termsOfServiceUrl("https://www.renren.io")
                 .version("1.x")
                 .build();

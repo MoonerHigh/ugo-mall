@@ -6,7 +6,7 @@
  * 版权所有，侵权必究！
  */
 
-package com.moonerhigh.ugomall.commons.dynamic.datasource.annotation;
+package com.moonerhigh.ugomall.dynamic.datasource.annotation;
 
 import java.lang.annotation.*;
 

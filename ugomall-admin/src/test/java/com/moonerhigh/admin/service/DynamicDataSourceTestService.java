@@ -10,7 +10,7 @@ package com.moonerhigh.admin.service;
 
 import com.moonerhigh.ugomall.modules.sys.dao.SysUserDao;
 import com.moonerhigh.ugomall.modules.sys.entity.SysUserEntity;
-import com.moonerhigh.ugomall.commons.dynamic.datasource.annotation.DataSource;
+import com.moonerhigh.ugomall.dynamic.datasource.annotation.DataSource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

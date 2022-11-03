@@ -6,10 +6,10 @@
  * 版权所有，侵权必究！
  */
 
-package com.moonerhigh.ugomall.commons.dynamic.datasource.aspect;
+package com.moonerhigh.ugomall.dynamic.datasource.aspect;
 
-import com.moonerhigh.ugomall.commons.dynamic.datasource.annotation.DataSource;
-import com.moonerhigh.ugomall.commons.dynamic.datasource.config.DynamicContextHolder;
+import com.moonerhigh.ugomall.dynamic.datasource.annotation.DataSource;
+import com.moonerhigh.ugomall.dynamic.datasource.config.DynamicContextHolder;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
@@ -35,8 +35,8 @@ import java.lang.reflect.Method;
 public class DataSourceAspect {
     protected Logger logger = LoggerFactory.getLogger(getClass());
 
-    @Pointcut("@annotation(com.moonerhigh.ugomall.commons.dynamic.datasource.annotation.DataSource) " +
-            "|| @within(com.moonerhigh.ugomall.commons.dynamic.datasource.annotation.DataSource)")
+    @Pointcut("@annotation(com.moonerhigh.ugomall.dynamic.datasource.annotation.DataSource) " +
+            "|| @within(com.moonerhigh.ugomall.dynamic.datasource.annotation.DataSource)")
     public void dataSourcePointCut() {
 
     }

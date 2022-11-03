@@ -6,10 +6,10 @@
  * 版权所有，侵权必究！
  */
 
-package com.moonerhigh.ugomall.commons.dynamic.datasource.config;
+package com.moonerhigh.ugomall.dynamic.datasource.config;
 
 import com.alibaba.druid.pool.DruidDataSource;
-import com.moonerhigh.ugomall.commons.dynamic.datasource.properties.DataSourceProperties;
+import com.moonerhigh.ugomall.dynamic.datasource.properties.DataSourceProperties;
 
 import java.sql.SQLException;
 

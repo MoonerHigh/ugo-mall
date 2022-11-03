@@ -6,7 +6,7 @@
  * 版权所有，侵权必究！
  */
 
-package com.moonerhigh.ugomall.commons.dynamic.datasource.properties;
+package com.moonerhigh.ugomall.dynamic.datasource.properties;
 
 /**
  * 多数据源属性

@@ -7,7 +7,7 @@ server:
       min-spare: 30
   port: 8080
   servlet:
-    context-path: /renren-admin
+    context-path: /ugomall-admin
     session:
       cookie:
         http-only: true

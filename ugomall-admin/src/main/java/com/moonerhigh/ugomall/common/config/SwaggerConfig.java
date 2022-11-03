@@ -49,17 +49,17 @@ public class SwaggerConfig{
             //.apis(RequestHandlerSelectors.basePackage("io.renren.modules.job.controller"))
             .paths(PathSelectors.any())
             .build()
-            .extensions(openApiExtensionResolver.buildExtensions("Renren"))
+            .extensions(openApiExtensionResolver.buildExtensions("ugomall"))
             .directModelSubstitute(java.util.Date.class, String.class)
             .securitySchemes(security());
     }
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-            .title("人人开源")
-            .description("renren-admin文档")
-            .termsOfServiceUrl("https://www.renren.io")
-            .version("5.x")
+            .title("优购商城")
+            .description("优购商城-后台管理文档")
+            .termsOfServiceUrl("https://github.com/MoonerHigh")
+            .version("1.x")
             .build();
     }
 

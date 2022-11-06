@@ -11,6 +11,7 @@ import com.moonerhigh.ugomall.common.validator.group.AddGroup;
 import com.moonerhigh.ugomall.common.validator.group.DefaultGroup;
 import com.moonerhigh.ugomall.common.validator.group.UpdateGroup;
 import com.moonerhigh.ugomall.coupon.dto.CouponDTO;
+import com.moonerhigh.ugomall.coupon.entity.CouponEntity;
 import com.moonerhigh.ugomall.coupon.excel.CouponExcel;
 import com.moonerhigh.ugomall.coupon.service.CouponService;
 import io.swagger.annotations.Api;
@@ -19,10 +20,13 @@ import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.*;
 import springfox.documentation.annotations.ApiIgnore;
 
 import javax.servlet.http.HttpServletResponse;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 

@@ -13,9 +13,6 @@
     <name>ugomall-coupon</name>
     <packaging>jar</packaging>
     <description>优购商城-优惠服务</description>
-    <properties>
-        <spring-cloud.version>2021.0.4</spring-cloud.version>
-    </properties>
     <dependencies>
         <dependency>
             <groupId>com.moonerhigh.ugomall</groupId>
@@ -54,7 +51,6 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
     <build>
         <plugins>
             <plugin>

@@ -26,6 +26,7 @@
         <module>ugomall-dynamic-datasource</module>
         <module>ugomall-api</module>
         <module>ugomall-generator</module>
+        <module>ugomall-gateway</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

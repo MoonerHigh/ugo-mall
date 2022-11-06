@@ -1,0 +1,29 @@
+# Tomcat
+server:
+  tomcat:
+    uri-encoding: UTF-8
+    threads:
+      max: 1000
+      min-spare: 30
+  port: 8010
+  servlet:
+    context-path: /ugomall-gateway
+    session:
+      cookie:
+        http-only: true
+spring:
+  # ?? dev|test|prod
+  profiles:
+    active: dev
+  messages:
+    encoding: UTF-8
+    basename: i18n/messages
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+  application:
+    name: ugomall-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848

@@ -10,8 +10,6 @@ import com.moonerhigh.ugomall.common.validator.ValidatorUtils;
 import com.moonerhigh.ugomall.common.validator.group.AddGroup;
 import com.moonerhigh.ugomall.common.validator.group.DefaultGroup;
 import com.moonerhigh.ugomall.common.validator.group.UpdateGroup;
-import com.moonerhigh.ugomall.member.entity.MemberEntity;
-import com.moonerhigh.ugomall.member.feign.CouponFeignService;
 import com.moonerhigh.ugomall.member.service.MemberService;
 import com.moonerhigh.ugomall.member.dto.MemberDTO;
 import com.moonerhigh.ugomall.member.excel.MemberExcel;
@@ -41,9 +39,6 @@ import java.util.Map;
 public class MemberController {
     @Autowired
     private MemberService memberService;
-
-    @Autowired
-    private CouponFeignService couponFeignService;
 
     @GetMapping("page")
     @ApiOperation("分页")

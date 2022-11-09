@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: ugomall-product
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yaml
+        namespace: f5f236ef-01bc-4841-9840-8f2f4acf79ff

@@ -4,6 +4,8 @@ import com.moonerhigh.ugomall.common.service.CrudService;
 import com.moonerhigh.ugomall.product.dto.CategoryDTO;
 import com.moonerhigh.ugomall.product.entity.CategoryEntity;
 
+import java.util.List;
+
 /**
  * 商品三级分类
  *
@@ -12,4 +14,5 @@ import com.moonerhigh.ugomall.product.entity.CategoryEntity;
  */
 public interface CategoryService extends CrudService<CategoryEntity, CategoryDTO> {
 
+    List<CategoryDTO> categoryTree();
 }

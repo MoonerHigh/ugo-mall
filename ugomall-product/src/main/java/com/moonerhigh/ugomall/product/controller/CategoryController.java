@@ -11,6 +11,7 @@ import com.moonerhigh.ugomall.common.validator.group.AddGroup;
 import com.moonerhigh.ugomall.common.validator.group.DefaultGroup;
 import com.moonerhigh.ugomall.common.validator.group.UpdateGroup;
 import com.moonerhigh.ugomall.product.dto.CategoryDTO;
+import com.moonerhigh.ugomall.product.entity.CategoryEntity;
 import com.moonerhigh.ugomall.product.excel.CategoryExcel;
 import com.moonerhigh.ugomall.product.service.CategoryService;
 import io.swagger.annotations.Api;
@@ -39,6 +40,21 @@ import java.util.Map;
 public class CategoryController {
     @Autowired
     private CategoryService categoryService;
+
+    /***
+     * @Description 商品分类树
+     * @author MoonerHigh
+     * @methodName categoryTree
+     * @date 2022/11/10 下午10:18
+     * @return com.moonerhigh.ugomall.common.utils.Result
+     */
+    @RequestMapping("/list/tree")
+    public Result<CategoryEntity> categoryTree(){
+        Result result = new Result();
+        List<CategoryDTO> categoryDTOList = categoryService.categoryTree();
+        result.setData(categoryDTOList);
+        return result;
+    }
 
     @GetMapping("page")
     @ApiOperation("分页")

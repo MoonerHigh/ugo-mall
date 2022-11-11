@@ -1,11 +1,14 @@
 package com.moonerhigh.ugomall.product.dto;
 
+import com.moonerhigh.ugomall.product.entity.CategoryEntity;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
-import java.util.Date;
+import java.util.List;
 
 
 /**
@@ -16,6 +19,8 @@ import java.util.Date;
  */
 @Data
 @ApiModel(value = "商品三级分类")
+@AllArgsConstructor
+@NoArgsConstructor
 public class CategoryDTO implements Serializable {
     private static final long serialVersionUID = 1L;
 
@@ -46,5 +51,7 @@ public class CategoryDTO implements Serializable {
 	@ApiModelProperty(value = "商品数量")
 	private Integer productCount;
 
+	@ApiModelProperty(value = "子分类列表")
+	private List<CategoryDTO> subList;
 
 }

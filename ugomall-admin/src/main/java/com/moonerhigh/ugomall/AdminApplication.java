@@ -16,7 +16,7 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 /**
- * renren-admin
+ * ugomall-admin
  *
  * @author Mark sunlightcs@gmail.com
  */

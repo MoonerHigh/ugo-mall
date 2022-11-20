@@ -7,7 +7,7 @@ server:
       min-spare: 30
   port: 8088
   servlet:
-    context-path: /ugomall-product
+    context-path: /
     session:
       cookie:
         http-only: true
